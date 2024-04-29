@@ -4,7 +4,6 @@ const containerVideos = document.querySelector(".videos__container");
 
 async function buscarEMostrarVideos() {
   const urlVideos = import.meta.env.VITE_URL_VIDEOS;
-  console.log(urlVideos);
 
   try {
     const busca = await axios.get(urlVideos);
